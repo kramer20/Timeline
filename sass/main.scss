@@ -1,0 +1,32 @@
+@import 'objects';
+
+$font-style:'Cabin Condensed', sans-serif;
+
+$first-color: #6CBFEE;
+
+@mixin text () {
+	color:white;
+	padding:10px;
+	margin-left:20px;
+	margin-right:20px;
+	font-family:$font-style;
+}
+
+h1 {
+	@include text;
+	font-size:24px;
+	border-bottom:solid lighten($first-color,10) 1px;
+	font-weight:700;
+}
+
+p.blackeyedPea {
+	@include text;
+	font-size:15px;
+	font-weight:400;
+}
+
+p.time {
+	font-family:$font-style;
+	font-size:35px;
+	color:$first-color;
+}
