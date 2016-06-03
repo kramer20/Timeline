@@ -1,42 +1,118 @@
-.circle {
-  height: 35px;
-  width: 35px;
-  border: solid #A8D9F4 5px;
-  background-color: #6CBFEE;
-  border-radius: 50%;
+.circleOne {
   margin-top: 40px;
   z-index: 9999;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border: solid #A8D9F4 5px;
+  background-color: #27a1e6;
+  border-radius: 50%;
+  position: relative; }
 
-.box {
-  width: 850px;
-  height: 250px;
+.circleTwo, .circleThree, .circleFour {
+  z-index: 9999;
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border: solid #A8D9F4 5px;
+  background-color: #27a1e6;
+  border-radius: 50%;
+  margin-top: 11px;
+  position: relative; }
+
+.bar {
+  margin-left: auto;
+  margin-right: auto; }
+
+.boxOne {
   border: solid #6CBFEE;
   background-color: #6CBFEE;
-  border-radius: 5px;
   margin-top: 40px;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px; }
 
-.box .triangle {
-  width: 12px;
-  height: 12px;
+.boxTwo {
+  border: solid #1995db;
+  background-color: #1995db;
+  margin-top: 11px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px; }
+
+.boxThree {
+  border: solid #126c9f;
+  background-color: #126c9f;
+  margin-top: 11px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px; }
+
+.boxFour {
+  border: solid #0e5076;
+  background-color: #0e5076;
+  margin-top: 11px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px; }
+
+.boxOne .triangleOne {
   border: solid #6CBFEE;
   background-color: #6CBFEE;
-  position: absolute;
   transform: rotate(45deg);
   left: -1%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  margin-top: 9px; }
+
+.boxTwo .triangleTwo {
+  border: solid #1995db;
+  background-color: #1995db;
+  transform: rotate(45deg);
+  left: -1%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  margin-top: 9px; }
+
+.boxThree .triangleThree {
+  border: solid #126c9f;
+  background-color: #126c9f;
+  transform: rotate(45deg);
+  left: -1%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  margin-top: 9px; }
+
+.boxFour .triangleFour {
+  border: solid #0e5076;
+  background-color: #0e5076;
+  transform: rotate(45deg);
+  left: -1%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
   margin-top: 9px; }
 
 .line {
+  position: absolute;
   height: 300px;
   width: 5px;
   border: solid #A8D9F4;
   background-color: #A8D9F4;
   margin-left: 14px;
-  margin-top: -10px;
-  position: absolute; }
+  margin-top: -10px; }
+
+.container {
+  width: 100%; }
 
 h1 {
   color: white;
@@ -48,15 +124,23 @@ h1 {
   border-bottom: solid #9ad3f3 1px;
   font-weight: 700; }
 
-.date {
-  margin-top: 42px;
+.dateOne {
   display: block;
   font-family: "Cabin Condensed", sans-serif;
-  padding-left: 79px;
+  text-align: right;
   font-size: 11px;
-  color: #DCDCDC; }
+  color: #DCDCDC;
+  margin-top: 42px; }
 
-p.blackeyedPea {
+.dateTwo, .dateThree, .dateFour {
+  display: block;
+  font-family: "Cabin Condensed", sans-serif;
+  text-align: right;
+  font-size: 11px;
+  color: #DCDCDC;
+  margin-top: 11px; }
+
+p.blackeyedPea, p.arugula, p.corn, p.eggplant {
   color: white;
   padding: 10px;
   margin-left: 20px;
@@ -64,16 +148,66 @@ p.blackeyedPea {
   font-family: "Cabin Condensed", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  margin-top: -9px; }
+  width: 100%;
+  margin-top: -9px;
+  padding-right: 40px; }
 
-p.time {
+p.timeOne {
+  color: #6CBFEE;
   font-family: "Cabin Condensed", sans-serif;
   font-size: 35px;
-  color: #6CBFEE;
-  padding-left: 44px;
+  text-align: right;
   margin-top: -5px; }
 
-i {
+p.timeTwo {
+  color: #1995db;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 35px;
+  text-align: right;
+  margin-top: -5px; }
+
+p.timeThree {
+  color: #126c9f;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 35px;
+  text-align: right;
+  margin-top: -5px; }
+
+p.timeFour {
+  color: #0e5076;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 35px;
+  text-align: right;
+  margin-top: -5px; }
+
+.phone i {
   color: white;
-  margin-left: 8px;
-  font-size: 40em; }
+  margin-left: 7px;
+  font-size: 25px;
+  margin-top: -1px;
+  position: absolute; }
+
+.laptop i {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 2px; }
+
+.desktop i {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 6px; }
+
+.note i {
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 4px; }
+
+@media (max-width: 991px) {
+  .triangleOne, .triangleTwo, .triangleThree, .triangleFour {
+    visibility: hidden; } }

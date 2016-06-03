@@ -1,46 +1,117 @@
-.circle {
-  height:35px;
-  width:35px;
-  border:solid #A8D9F4 5px;
-  background-color: $first-color;
-  border-radius:50%;
-  margin-top:40px;
-  z-index:9999;
-  position:relative;
-  display:inline-block;
-
+@mixin circle () {
+	z-index:9999;
+  	position:relative;
+  	display:inline-block;
+  	height:35px;
+  	width:35px;
+  	border:solid $outline 5px;
+  	background-color: darken($first-color,15);
+  	border-radius:50%;
 }
 
-.box {
-	width:850px;
-	height:250px;
-	border:solid $first-color;
-	background-color:$first-color;
-	border-radius:5px;
-	margin-top:40px;
+@mixin box () {
 	position:relative;
 	display:inline-block;
+	width:100%;
+	border-radius:5px;
 }
 
-.box .triangle {
-	width:12px;
-	height:12px;
-	border:solid $first-color;
-	background-color: $first-color;
-	position:absolute;
+@mixin triangle () {
 	transform:rotate(45deg);
 	left:-1%;
+	width:12px;
+	height:12px;
+	position:absolute;
 	margin-top:9px;
 }
 
-.line {
+@mixin line () {
+	position:absolute;
 	height:300px;
 	width:5px;
-	border:solid #A8D9F4;
-	background-color:#A8D9F4; 
+	border:solid $outline;
+	background-color:$outline; 
 	margin-left:14px;
-	margin-top:-10px;
-	position:absolute;
-
-	 
 }
+
+.circleOne {
+	margin-top:40px;
+  @include circle;
+  position:relative;
+}
+
+.circleTwo, .circleThree, .circleFour {
+	@include circle;
+	margin-top:11px;
+	position:relative;
+}
+
+.bar {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.boxOne {
+	border:solid $first-color;
+	background-color:$first-color;
+	margin-top:40px;
+	@include box;
+}
+
+.boxTwo {
+	border:solid darken($first-color, 20);
+	background-color: darken($first-color,20);
+	margin-top:11px;
+	@include box;
+}
+
+.boxThree {
+	border:solid darken($first-color,33);
+	background-color: darken($first-color,33);
+	margin-top:11px;
+	@include box;
+}
+
+.boxFour {
+	border:solid darken($first-color,42);
+	background-color: darken($first-color,42);
+	margin-top:11px;
+	@include box;
+}
+.boxOne {
+	.triangleOne {
+		border:solid $first-color;
+		background-color: $first-color;
+		@include triangle; 
+	}
+}
+
+.boxTwo {
+	.triangleTwo {
+		border:solid darken($first-color, 20);
+		background-color: darken($first-color,20);
+		@include triangle; 
+	}
+}
+
+.boxThree {
+	.triangleThree {
+		border:solid darken($first-color, 33);
+		background-color: darken($first-color,33);
+		@include triangle; 
+	}
+}
+
+.boxFour {
+	.triangleFour {
+		border:solid darken($first-color, 42);
+		background-color: darken($first-color,42);
+		@include triangle; 
+	}
+}
+
+.line {
+	@include line;
+	margin-top:-10px;
+}
+
