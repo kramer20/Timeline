@@ -1,8 +1,8 @@
-@import 'objects';
+$first-color:#6CBFEE;
 
 $font-style:'Cabin Condensed', sans-serif;
 
-$first-color: #6CBFEE;
+@import 'objects';
 
 @mixin text () {
 	color:white;
@@ -19,14 +19,32 @@ h1 {
 	font-weight:700;
 }
 
+.date {
+	margin-top:42px;
+	display:block;
+	font-family:$font-style;
+	padding-left:79px;
+	font-size:11px;
+	color:#DCDCDC;
+}
+
 p.blackeyedPea {
 	@include text;
 	font-size:15px;
 	font-weight:400;
+	margin-top:-9px;
 }
 
 p.time {
 	font-family:$font-style;
 	font-size:35px;
 	color:$first-color;
+	padding-left:44px;
+	margin-top:-5px;
+}
+
+i {
+	color:white;
+	margin-left:8px;
+	font-size:40em;
 }
