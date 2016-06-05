@@ -1,5 +1,5 @@
 .circleOne {
-  margin-top: 40px;
+  margin-top: 11px;
   z-index: 9999;
   position: relative;
   display: inline-block;
@@ -29,7 +29,7 @@
 .boxOne {
   border: solid #6CBFEE;
   background-color: #6CBFEE;
-  margin-top: 40px;
+  margin-top: 11px;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -116,7 +116,8 @@
 
 h1 {
   color: white;
-  padding: 10px;
+  padding-top: 3px;
+  padding-bottom: 7px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Cabin Condensed", sans-serif;
@@ -130,7 +131,7 @@ h1 {
   text-align: right;
   font-size: 11px;
   color: #DCDCDC;
-  margin-top: 42px; }
+  margin-top: 11px; }
 
 .dateTwo, .dateThree, .dateFour {
   display: block;
@@ -142,14 +143,15 @@ h1 {
 
 p.blackeyedPea, p.arugula, p.corn, p.eggplant {
   color: white;
-  padding: 10px;
+  padding-top: 3px;
+  padding-bottom: 7px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Cabin Condensed", sans-serif;
   font-size: 15px;
   font-weight: 400;
   width: 100%;
-  margin-top: -9px;
+  margin-top: -5px;
   padding-right: 40px; }
 
 p.timeOne {

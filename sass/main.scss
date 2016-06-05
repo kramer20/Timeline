@@ -10,7 +10,8 @@ $outline: #A8D9F4;
 
 @mixin text () {
 	color:$font-color;
-	padding:10px;
+	padding-top:3px;
+	padding-bottom:7px;
 	margin-left:20px;
 	margin-right:20px;
 	font-family:$font-style;
@@ -34,7 +35,7 @@ $outline: #A8D9F4;
 	font-size:15px;
 	font-weight:400;
 	width:100%;
-	margin-top:-9px;
+	margin-top:-5px;
 	padding-right:40px;
 }
 
@@ -57,7 +58,7 @@ h1 {
 
 .dateOne {
 	@include dates;
-	margin-top:42px;
+	margin-top:11px;
 }
 
 .dateTwo, .dateThree, .dateFour {

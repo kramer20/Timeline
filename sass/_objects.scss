@@ -35,7 +35,7 @@
 }
 
 .circleOne {
-	margin-top:40px;
+	margin-top:11px;
   @include circle;
   position:relative;
 }
@@ -54,7 +54,7 @@
 .boxOne {
 	border:solid $first-color;
 	background-color:$first-color;
-	margin-top:40px;
+	margin-top:11px;
 	@include box;
 }
 
